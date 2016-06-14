@@ -6,11 +6,15 @@
       margin: 0;
       height: 100%;
       width: 100%;
+      font-family: sans-serif;
     }
     .container {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      border: 1px solid #000;
+      height:500px;
+      margin: 15px;
     }
     .box {
       padding: 1em;
@@ -21,11 +25,55 @@
       font-size: 2em;
       line-height: 2em;
       font-weight: bold;
+
+    }
+
+    .controls-container {
+      text-align: center;
+      margin: 0 auto;
+      padding: 1em;
+      background: #203c63;
+      padding: 30px 10px;
+      color: #fff;
+      line-height: 2em;
+    }
+
+    .controls-container input, controls-container button {
+      display: block;
+      padding: 5px;
+      margin: 0 auto;
+    }
+
+    .controls-container button {
+      background: orange;
+      color: #fff;
+      padding: 10px 39px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
     }
   </style>
 
 </head>
 <body>
+
+  <div class="controls-container">
+    <h2>
+      what do you want me to remember today?
+    </h2>
+
+
+      <label for="colour">Note colour:</label>
+         <input type="text" id="colour" name="note_colour">
+
+         <label for="message">Note message:</label>
+         <input type="text" id="message" name="note_message">
+
+         <button type="submit"> Create note</button>
+
+
+
+  </div>
 
 
   <div class="container"></div>
