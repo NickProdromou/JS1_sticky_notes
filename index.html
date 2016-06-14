@@ -7,13 +7,12 @@
       height: 100%;
       width: 100%;
       font-family: sans-serif;
+      background: #455A64;
     }
     .container {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      border: 1px solid #000;
-      height:500px;
       margin: 15px;
     }
     .box {
@@ -38,9 +37,14 @@
       line-height: 2em;
     }
 
-    .controls-container input, controls-container button {
+    .controls-container input, controls-container button, select {
       display: block;
       padding: 5px;
+      margin: 0 auto;
+    }
+
+    .controls {
+      max-width: 500px;
       margin: 0 auto;
     }
 
@@ -52,25 +56,40 @@
       border: none;
       border-radius: 5px;
     }
+
+    .box h2 {
+      font-size: .8em;
+    }
+
+    .box span.num {
+      display: block;
+      padding: 1em .5em;
+      border-radius: 100%;
+      background: #000;
+      color: #fff;
+    }
+
   </style>
 
 </head>
 <body>
 
   <div class="controls-container">
-    <h2>
-      what do you want me to remember today?
-    </h2>
 
 
+    <div class="controls">
+      <h2>
+        what do you want me to remember today?
+      </h2>
       <label for="colour">Note colour:</label>
          <input type="text" id="colour" name="note_colour">
+
 
          <label for="message">Note message:</label>
          <input type="text" id="message" name="note_message">
 
          <button type="submit"> Create note</button>
-
+    </div>
 
 
   </div>

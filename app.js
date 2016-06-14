@@ -22,7 +22,7 @@ submit.addEventListener('click',function(){
 function createNote(colour,title,count){
   var currentNote = document.createElement('div');
   currentNote.className = "box";
-  currentNote.innerHTML="<h2>" +  count + "." + "" + title + "</h2>"
+  currentNote.innerHTML="<h2>" + count + ".<br>" + "" + title + "</h2>"
   currentNote.style.background = colour;
   return currentNote;
 }
