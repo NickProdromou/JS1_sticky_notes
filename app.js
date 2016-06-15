@@ -1,3 +1,5 @@
+(function(){
+
 //cache dom
 var submit = document.querySelector("button");
 var blankNote = document.createElement('div');
@@ -5,9 +7,7 @@ var noteCount = 1;
 var newNote = createNote();
 var container = document.getElementsByClassName("container")[0];
 
-
 //event listeners
-
 submit.addEventListener('click',function(){
   var colourField = document.querySelector('#colour');
   var colourValue = colourField.value;
@@ -18,7 +18,6 @@ submit.addEventListener('click',function(){
 })
 
 //functions
-
 function createNote(colour,title,count){
   var currentNote = document.createElement('div');
   currentNote.className = "box";
@@ -31,3 +30,5 @@ function appendNote(note){
   container.appendChild(note);
   noteCount ++;
 }
+  
+}) ()
